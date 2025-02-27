@@ -72,9 +72,15 @@ This repository contains the code and resources for a **Data Engineering Pipelin
    ```bash
    cd DBT-Airflow-Pipeline
    ```
-3. Start the Docker containers:
+3. Ensure Docker and Docker Compose are installed on your system.
+4. Start the Docker containers:
    ```bash
    docker-compose up -d
+   ```
+5. Access **Airflow Web UI** at `http://localhost:8080/`.
+6. Run **DBT models** inside the running container:
+   ```bash
+   docker exec -it airflow_dbt_container dbt run
    ```
 
 ---
@@ -100,4 +106,4 @@ This repository contains the code and resources for a **Data Engineering Pipelin
 
 ## 🧑‍💻 Author  
 - **LinkedIn**: [Aman Jha](https://www.linkedin.com/in/aman--jha/)  
-- **GitHub**: [Aman Jha](https://github.com/jha-aman09)
+- **GitHub**: [Aman Jha](https://github.com/jha-aman09)  
